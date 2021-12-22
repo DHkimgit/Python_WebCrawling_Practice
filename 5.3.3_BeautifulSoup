@@ -1,0 +1,7 @@
+import bs4
+html_str = "<html><div>hello</div></html>" 
+bs_obj = bs4.BeautifulSoup(html_str, "html.parser")
+
+print(type(bs_obj)) //bs_obj 변수 타입이 <class 'bs4.BeautifulSoup'>
+print(bs_obj) //<html><div>hello</div></html> 이 담겨 있는 내용이다
+print(bs_obj.find("div")) //<div>hello</div> 가 결과. div를 찾으면 
